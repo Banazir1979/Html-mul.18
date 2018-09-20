@@ -6,19 +6,51 @@
 <meta name="description" content="Links">
 <meta name="author" content="N Schjaerff">
 <title>Contacts</title>
+	<style>
+	/* Form Style */
+		form{
+			width: 40vw;
+			margin: 20px auto;
+			border: 1px solid black;
+			padding: 20px;
+			
+		}
+	
+	</style>
+			
 </head>
 
 <body>
-
-  <header> 
-    <!--navigation-->
-    <nav><a href="hello-world.html" target="_self">Hello world</a></nav>
-    <nav><a href="tables.html" target="_self">Tables</a></nav>
-    <nav><a href="p_animals.html" target="_self">Predatory Animals</a></nav>
-    <nav><a href="../index.html" target="_self">Index</a></nav>
-    <nav><a href="https://www.cphbusiness.dk/" target="_blank">Cph Business</a></nav>
-    <nav><a href="#" target="_self">Contacts</a></nav>
-  </header>
-
+<header>
+  <h1>Contact me</h1>
+</header>
+<!--navigation-->
+<nav> 
+	<a href="hello-world.html" target="_self">Hello world</a> 
+	<a href="tables.html" target="_self">Tables</a> 
+	<a href="p_animals.html" target="_self">Predatory Animals</a>
+	<a href="../index.html" target="_self">Index</a>
+	<a href="https://www.cphbusiness.dk/" target="_blank">Cph Business</a>
+	<a href="#" target="_self">Contacts</a>
+</nav>
+<!-- webform -->
+<form action="mailto:jsinius@yahoo.dk" method="post" enctype="text/plain">
+  <p>
+    <label>Your name:</label>
+  </p>
+  <p>
+    <input type="text" name="name" placeholder="Type your name.." autofocus required>
+  </p>
+	<p>
+    <label>Your Email:</label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Type a valid mail address.." required>
+	</p>
+	<p><label>Your Message!</label></p>
+	<p><textarea name="comment" placeholder="Your message..."></textarea></p>
+	<p>I love this!<input type="radio" name="love"></p>
+	<input type="submit" value="Submit form">
+</form>
 </body>
 </html>
